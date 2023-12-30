@@ -1,0 +1,475 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: user identification
+  steps:
+  - intent: get_username 
+  - action: utter_welcome
+
+- story: user introduction
+  steps:
+  - intent: introduce_yourself
+  - action: utter_intro
+
+- story: link 1 happy
+  steps:
+  - intent: get_MAML_link
+  - action: utter_link1
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: link 1 sad
+  steps:
+  - intent: get_MAML_link
+  - action: utter_link1
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: link 2 happy
+  steps:
+  - intent: get_MAML_FAQ_link
+  - action: utter_link2
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: link 2 sad
+  steps:
+  - intent: get_MAML_FAQ_link
+  - action: utter_link2
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: query_Q1
+  steps:
+  - intent: Q1
+  - action: utter_Q1
+- story: query_Q2
+  steps:
+  - intent: Q2
+  - action: utter_Q2
+- story: query_Q3
+  steps:
+  - intent: Q3
+  - action: utter_Q3
+- story: query_Q4
+  steps:
+  - intent: Q4
+  - action: utter_Q4
+- story: query_Q5
+  steps:
+  - intent: Q5
+  - action: utter_Q5
+- story: query_Q6
+  steps:
+  - intent: Q6
+  - action: utter_Q6
+- story: query_Q7
+  steps:
+  - intent: Q7
+  - action: utter_Q7
+- story: query_Q8
+  steps:
+  - intent: Q8
+  - action: utter_Q8
+- story: query_Q9
+  steps:
+  - intent: Q9
+  - action: utter_Q9
+- story: query_Q10
+  steps:
+  - intent: Q10
+  - action: utter_Q10
+- story: query_Q11
+  steps:
+  - intent: Q11
+  - action: utter_Q11
+- story: query_Q12
+  steps:
+  - intent: Q12
+  - action: utter_Q12
+- story: query_Q13
+  steps:
+  - intent: Q13
+  - action: utter_Q13
+- story: query_Q14
+  steps:
+  - intent: Q14
+  - action: utter_Q14
+- story: query_Q15
+  steps:
+  - intent: Q15
+  - action: utter_Q15
+- story: query_Q16
+  steps:
+  - intent: Q16
+  - action: utter_Q16
+- story: query_Q17
+  steps:
+  - intent: Q17
+  - action: utter_Q17
+- story: query_Q18
+  steps:
+  - intent: Q18
+  - action: utter_Q18
+- story: query_Q19
+  steps:
+  - intent: Q19
+  - action: utter_Q19
+- story: query_Q20
+  steps:
+  - intent: Q20
+  - action: utter_Q20
+- story: query_Q21
+  steps:
+  - intent: Q21
+  - action: utter_Q21
+- story: query_Q22
+  steps:
+  - intent: Q22
+  - action: utter_Q22
+- story: query_Q23
+  steps:
+  - intent: Q23
+  - action: utter_Q23
+- story: query_Q24
+  steps:
+  - intent: Q24
+  - action: utter_Q24
+- story: query_Q25
+  steps:
+  - intent: Q25
+  - action: utter_Q25
+- story: query_Q26
+  steps:
+  - intent: Q26
+  - action: utter_Q26
+- story: query_Q27
+  steps:
+  - intent: Q27
+  - action: utter_Q27
+- story: query_Q28
+  steps:
+  - intent: Q28
+  - action: utter_Q28
+- story: query_Q29
+  steps:
+  - intent: Q29
+  - action: utter_Q29
+- story: query_Q30
+  steps:
+  - intent: Q30
+  - action: utter_Q30
+- story: query_Q31
+  steps:
+  - intent: Q31
+  - action: utter_Q31
+- story: query_Q32
+  steps:
+  - intent: Q32
+  - action: utter_Q32
+- story: query_Q33
+  steps:
+  - intent: Q33
+  - action: utter_Q33
+- story: query_Q34
+  steps:
+  - intent: Q34
+  - action: utter_Q34
+- story: query_Q35
+  steps:
+  - intent: Q35
+  - action: utter_Q35
+- story: query_Q36
+  steps:
+  - intent: Q36
+  - action: utter_Q36
+- story: query_Q37
+  steps:
+  - intent: Q37
+  - action: utter_Q37
+- story: query_Q38
+  steps:
+  - intent: Q38
+  - action: utter_Q38
+- story: query_Q39
+  steps:
+  - intent: Q39
+  - action: utter_Q39
+- story: query_Q40
+  steps:
+  - intent: Q40
+  - action: utter_Q40
+- story: query_Q41
+  steps:
+  - intent: Q41
+  - action: utter_Q41
+- story: query_Q42
+  steps:
+  - intent: Q42
+  - action: utter_Q42
+- story: query_Q43
+  steps:
+  - intent: Q43
+  - action: utter_Q43
+- story: query_Q44
+  steps:
+  - intent: Q44
+  - action: utter_Q44
+- story: query_Q45
+  steps:
+  - intent: Q45
+  - action: utter_Q45
+- story: query_Q46
+  steps:
+  - intent: Q46
+  - action: utter_Q46
+- story: query_Q47
+  steps:
+  - intent: Q47
+  - action: utter_Q47
+- story: query_Q48
+  steps:
+  - intent: Q48
+  - action: utter_Q48
+- story: query_Q49
+  steps:
+  - intent: Q49
+  - action: utter_Q49
+- story: query_Q50
+  steps:
+  - intent: Q50
+  - action: utter_Q50
+- story: query_Q51
+  steps:
+  - intent: Q51
+  - action: utter_Q51
+- story: query_Q52
+  steps:
+  - intent: Q52
+  - action: utter_Q52
+- story: query_Q53
+  steps:
+  - intent: Q53
+  - action: utter_Q53
+- story: query_Q54
+  steps:
+  - intent: Q54
+  - action: utter_Q54
+- story: query_Q55
+  steps:
+  - intent: Q55
+  - action: utter_Q55
+- story: query_Q56
+  steps:
+  - intent: Q56
+  - action: utter_Q56
+- story: query_Q57
+  steps:
+  - intent: Q57
+  - action: utter_Q57
+- story: query_Q58
+  steps:
+  - intent: Q58
+  - action: utter_Q58
+- story: query_Q59
+  steps:
+  - intent: Q59
+  - action: utter_Q59
+- story: query_Q60
+  steps:
+  - intent: Q60
+  - action: utter_Q60
+- story: query_Q61
+  steps:
+  - intent: Q61
+  - action: utter_Q61
+- story: query_Q62
+  steps:
+  - intent: Q62
+  - action: utter_Q62
+- story: query_Q63
+  steps:
+  - intent: Q63
+  - action: utter_Q63
+- story: query_Q64
+  steps:
+  - intent: Q64
+  - action: utter_Q64
+- story: query_Q65
+  steps:
+  - intent: Q65
+  - action: utter_Q65
+- story: query_Q66
+  steps:
+  - intent: Q66
+  - action: utter_Q66
+- story: query_Q67
+  steps:
+  - intent: Q67
+  - action: utter_Q67
+- story: query_Q68
+  steps:
+  - intent: Q68
+  - action: utter_Q68
+- story: query_Q69
+  steps:
+  - intent: Q69
+  - action: utter_Q69
+- story: query_Q70
+  steps:
+  - intent: Q70
+  - action: utter_Q70
+- story: query_Q71
+  steps:
+  - intent: Q71
+  - action: utter_Q71
+- story: query_Q72
+  steps:
+  - intent: Q72
+  - action: utter_Q72
+- story: query_Q73
+  steps:
+  - intent: Q73
+  - action: utter_Q73
+- story: query_Q74
+  steps:
+  - intent: Q74
+  - action: utter_Q74
+- story: query_Q75
+  steps:
+  - intent: Q75
+  - action: utter_Q75
+- story: query_Q76
+  steps:
+  - intent: Q76
+  - action: utter_Q76
+- story: query_Q77
+  steps:
+  - intent: Q77
+  - action: utter_Q77
+- story: query_Q78
+  steps:
+  - intent: Q78
+  - action: utter_Q78
+- story: query_Q79
+  steps:
+  - intent: Q79
+  - action: utter_Q79
+- story: query_Q80
+  steps:
+  - intent: Q80
+  - action: utter_Q80
+- story: query_Q81
+  steps:
+  - intent: Q81
+  - action: utter_Q81
+- story: query_Q82
+  steps:
+  - intent: Q82
+  - action: utter_Q82
+- story: query_Q83
+  steps:
+  - intent: Q83
+  - action: utter_Q83
+- story: query_Q84
+  steps:
+  - intent: Q84
+  - action: utter_Q84
+- story: query_Q85
+  steps:
+  - intent: Q85
+  - action: utter_Q85
+- story: query_Q86
+  steps:
+  - intent: Q86
+  - action: utter_Q86
+- story: query_Q87
+  steps:
+  - intent: Q87
+  - action: utter_Q87
+- story: query_Q88
+  steps:
+  - intent: Q88
+  - action: utter_Q88
+- story: query_Q89
+  steps:
+  - intent: Q89
+  - action: utter_Q89
+- story: query_Q90
+  steps:
+  - intent: Q90
+  - action: utter_Q90
+- story: query_Q91
+  steps:
+  - intent: Q91
+  - action: utter_Q91
+- story: query_Q92
+  steps:
+  - intent: Q92
+  - action: utter_Q92
+- story: query_Q93
+  steps:
+  - intent: Q93
+  - action: utter_Q93
+- story: query_Q94
+  steps:
+  - intent: Q94
+  - action: utter_Q94
+- story: query_Q95
+  steps:
+  - intent: Q95
+  - action: utter_Q95
+- story: query_Q96
+  steps:
+  - intent: Q96
+  - action: utter_Q96
+- story: query_Q97
+  steps:
+  - intent: Q97
+  - action: utter_Q97
+- story: query_Q98
+  steps:
+  - intent: Q98
+  - action: utter_Q98
+- story: query_Q99
+  steps:
+  - intent: Q99
+  - action: utter_Q99
+- story: query_Q100
+  steps:
+  - intent: Q100
+  - action: utter_Q100
+
+
